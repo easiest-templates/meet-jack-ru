@@ -77,3 +77,20 @@
 .rounded-4xl {
   border-radius: 2rem;
 }
+
+/* Hide Spline "Built with Spline" badge */
+[data-spline-watermark],
+a[href*="spline.design"][target="_blank"],
+div[style*="spline"] > a,
+canvas + a[target="_blank"],
+.spline-watermark,
+div[class*="spline"] > a[href*="spline"],
+a[href="https://spline.design"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
